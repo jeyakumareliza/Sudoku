@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sudoku Puzzles </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/rotating-circles-preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="col-sm-12">
+        <table id="board">
+            {{#board}}
+            <tr>
+                <td> {{0}} </td>
+                <td> {{1}} </td>
+                <td> {{2}} </td>
+                <td> {{3}} </td>
+                <td> {{4}} </td>
+                <td> {{5}} </td>
+                <td> {{6}} </td>
+                <td> {{7}} </td>
+                <td> {{8}} </td>
+            </tr>
+            {{/board}}
+        </table>
+    </div>
+    <div class="col-sm-12">
+        <button id="btn-reload" class="btn btn-default col-sm-2 offset-sm-5">Reload</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
