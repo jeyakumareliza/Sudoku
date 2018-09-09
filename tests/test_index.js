@@ -165,8 +165,8 @@ describe('Sudoku Board', function () {
             expect(solver.checkValue(boardWithValue1, 0, 0, 2)).to.not.be.ok;
 
             // No match. Return true
-            expect(solver.checkValue(boardWithValue1, 3, 2, 2)).to.be.ok;
-            expect(solver.checkValue(boardWithValue1, 7, 6, 3)).to.be.ok;
+            expect(solver.checkValue(boardWithValue2, 3, 2, 2)).to.be.ok;
+            expect(solver.checkValue(boardWithValue2, 7, 6, 3)).to.be.ok;
 
             // Match found. Return false
             expect(solver.checkValue(boardWithValue2, 7, 2, 6)).to.not.be.ok;
